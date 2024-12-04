@@ -24,6 +24,11 @@ app.get("/", async (req, res) => {
   res.render("index.ejs");
 });
 
+app.get('/notes', (req, res) => {
+  res.render('note.ejs');
+});
+
+
 app.post("/add", async (req, res) => {
   res.render("new.ejs");
 });
